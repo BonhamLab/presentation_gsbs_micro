@@ -29,8 +29,7 @@
 
 = Introspection - all about me
 
-// Use reusable slide from lab_general assets (via typst_assets submodule)
-#figure(image("typst_assets/assets_lab_general/figures/narcissus.jpg"), numbering: none, caption:[
+#figure(image("assets/lab_general/narcissus.jpg"), numbering: none, caption:[
   #text(15pt, fill: gray)[https://en.wikipedia.org/wiki/Narcissus_(Caravaggio)]
 ])
 
@@ -54,4 +53,6 @@
 
 == Questions?
 
-#figure(image("typst_assets/assets_lab_general/figures/narcissus.jpg", width: 50%))
+#figure(image("assets/lab_general/narcissus.jpg"), numbering: none, caption:[
+  #text(15pt, fill: gray)[https://en.wikipedia.org/wiki/Narcissus_(Caravaggio)]
+])
