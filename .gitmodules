@@ -1,0 +1,12 @@
+[submodule "typst_assets"]
+	path = typst_assets
+	url = https://github.com/BonhamLab/typst_assets.git
+[submodule "project_assets"]
+	path = project_assets
+	url = https://github.com/BonhamLab/assets_child_brain_microbiome.git
+[submodule "assets/binfantis"]
+	path = assets/binfantis
+	url = https://github.com/BonhamLab/assets_binfantis.git
+[submodule "assets/lab_general"]
+	path = assets/lab_general
+	url = https://github.com/BonhamLab/assets_lab_general.git
