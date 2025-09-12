@@ -36,6 +36,78 @@
   #text(15pt, fill: gray)[https://en.wikipedia.org/wiki/Narcissus_(Caravaggio)]
 ])
 
+== At the bench - small molecule inhibitors of T-cells
+
+#slide[
+
+- B.S. from UCSD in Biochemistry and Cell biology
+- Postbac with Kerry Mowen - chemical inhibitors of
+  protein arginine methyl-transferases (PRMTs)
+
+][
+  #pause
+  #figure(
+    image("assets/career_experimental/prmt-fig2b.png", width: 60%),
+    )
+    #pause
+  #figure(
+    image("assets/career_experimental/prmt-fig5b.png", width: 50%),
+    )
+
+]
+
+== At the bench - Toll-like receptor signaling
+
+#slide(composer: (50%, 50%))[
+    - Investigation of the cell-biology of TIRAP,
+      an adaptor protein
+    - Established literature showed TIRAP was confined to the plasma membrane
+      (eg TLR4, responding to LPS)
+    - TIRAP KO macrophages could still respond with
+      endosomal TLRs (eg TLR9, responding to CpG)
+
+][
+    #figure(
+        image("assets/career_experimental/tlr-review-fig2.gif", width:67%)
+    )
+]
+
+#slide[
+    #figure(
+        image("assets/career_experimental/cell-fig3e.png")
+    )
+    #text(11pt)[Bonham, _et. al._, _Cell_ (2014)]
+]
+
+#slide[
+    #figure(
+        image("assets/career_experimental/cell-fig4b.png")
+    )
+    #v(2em)
+    #text(11pt)[Bonham, _et. al._, _Cell_ (2014)]
+]
+
+== Multi-'omics and Data Science - Human microbiome epidemiology
+
+#slide[
+    #v(1em)
+    #figure(
+        image("assets/career_experimental/arthritis-fig2.png", width: 100%)
+    )
+    #v(1.5em)
+
+    #text(11pt)[Thompson, _et. al._, _Sci. Transl. Med._ (2023)]
+]
+
+#slide[
+    #v(-1em)
+    #figure(
+        image("assets/career_experimental/arthritis-fig3.png", width: 73%)
+    )
+
+    #text(11pt)[Thompson, _et. al._, _Sci. Transl. Med._ (2023)]
+]
+
 = Introduction - bugs & brains
 
 == The gut-brain-microbiome "axis"

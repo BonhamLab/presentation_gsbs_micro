@@ -13,3 +13,9 @@
 [submodule "assets/child_brain_microbiome"]
 	path = assets/child_brain_microbiome
 	url = https://github.com/BonhamLab/assets_child_brain_microbiome.git
+[submodule "assets/career_experimental"]
+	path = assets/career_experimental
+	url = https://github.com/BonhamLab/assets_career_experimental.git
+[submodule "assets/cheese_hgt"]
+	path = assets/cheese_hgt
+	url = https://github.com/BonhamLab/assets_cheese_hgt.git
