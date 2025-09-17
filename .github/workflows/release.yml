@@ -139,7 +139,12 @@ jobs:
           ARCHIVE_NAME="touying-presentation-$(date +%Y%m%d-%H%M%S)-source"
         fi
         
+        # Create a temporary directory for the archive
+        mkdir -p /tmp/archive-staging
+        ARCHIVE_PATH="/tmp/archive-staging/${ARCHIVE_NAME}.tar.gz"
+        
         # Create comprehensive archive excluding CI artifacts but including all source and submodules
+        # Use absolute path for output to avoid circular reference
         tar --exclude='.git' \
             --exclude='.github' \
             --exclude='*.log' \
@@ -147,7 +152,11 @@ jobs:
             --exclude='.DS_Store' \
             --exclude='Thumbs.db' \
             --exclude='presentation.pdf' \
-            -czf "${ARCHIVE_NAME}.tar.gz" .
+            --exclude='*.tar.gz' \
+            -czf "${ARCHIVE_PATH}" .
+        
+        # Move archive back to working directory
+        mv "${ARCHIVE_PATH}" "./${ARCHIVE_NAME}.tar.gz"
         
         # Verify archive was created successfully
         if [ -f "${ARCHIVE_NAME}.tar.gz" ]; then
@@ -165,10 +174,17 @@ jobs:
           # List archive contents for verification (first 20 entries)
           echo "=== Archive Contents (sample) ==="
           tar -tzf "${ARCHIVE_NAME}.tar.gz" | head -20
+          
+          # Show total number of files in archive
+          total_files=$(tar -tzf "${ARCHIVE_NAME}.tar.gz" | wc -l)
+          echo "Total files in archive: ${total_files}"
         else
           echo "❌ Failed to create archive"
           exit 1
         fi
+        
+        # Cleanup temporary directory
+        rm -rf /tmp/archive-staging
         
         # Save archive name for later steps
         echo "ARCHIVE_NAME=${ARCHIVE_NAME}" >> $GITHUB_ENV
