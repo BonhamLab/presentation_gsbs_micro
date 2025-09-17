@@ -218,6 +218,10 @@
     #v(1em)
 ]
 
+#focus-slide[
+  Only 7 species were significantly associated with cognitive development
+]
+
 #slide[
    
     #figure(
@@ -231,6 +235,7 @@
         })
     )
 ]
+
 
 == ML also identifies microbes associated with brain structure
 

@@ -19,3 +19,6 @@
 [submodule "assets/cheese_hgt"]
 	path = assets/cheese_hgt
 	url = https://github.com/BonhamLab/assets_cheese_hgt.git
+[submodule "assets/stats_ML"]
+	path = assets/stats_ML
+	url = git@github.com:BonhamLab/assets_stats_ML.git
