@@ -2,6 +2,7 @@
 #import themes.metropolis: *
 #import "@preview/cetz:0.4.2"
 #import "@preview/fontawesome:0.6.0": *
+#import "@preview/tiaoma:0.3.0"
 
 #let cetz-canvas = touying-reducer.with(reduce: cetz.canvas, cover: cetz.draw.hide.with(bounds: true))
 
@@ -63,6 +64,7 @@
       )]
     )
     content((0,3.2), [2006-2008])
+    content((0,-5.4), text(14pt, [@bonham2010effects]))
     (pause,)
     content((1, -1.5),
       [#box(stroke:1pt, inset:3pt, fill:white,
@@ -72,12 +74,14 @@
     (pause,)
 
     content((10,3.5), [2008-2014 (PhD)])
+    content((10,-6.6), text(14pt, [@brubaker2015innate]))
     content((10, -1.5),
       [#box(stroke:1pt, inset:3pt, fill:white,
         image("assets/career_experimental/tlr-review-fig2.gif", width: 180pt)
       )]
     )
     (pause,)
+    content((16,-6.6), text(14pt, [@bonham2014promiscuous]))
     content((14, 0.5),
       [#box(stroke:1pt, inset:3pt, fill:white,
         image("assets/career_experimental/cell-fig3e.png",width:300pt)
@@ -101,6 +105,7 @@
     cetz-canvas({
     import cetz.draw: *
     content((0,3.1),[2014-2017])
+    content((-7,-8.2), text(14pt, [@bonham2017extensive]))
     content((0, 0),
       [#box(stroke:1pt, inset:3pt, fill:white,
         image("assets/cheese_hgt/cheese-fig1.jpg", width:  550pt)
@@ -152,15 +157,17 @@
         image("assets/cheese_hgt/elife-fig3a.jpg", width: 150pt)
       )]
     )
+    content((0,-6.5), text(14pt, [@bonham2017extensive]))
 
     content((14,3.4),[2017-2019])
+    content((6,-9.2), text(14pt, [@thompsonAlterationsGutMicrobiomeImplicateKey2023]))
     content((14,0),
       [#box(stroke:1pt, inset:3pt, fill:white,
         image("assets/career_experimental/arthritis-fig2.png", width: 600pt)
       )]
     )
     (pause,)
-    content((15,-5),
+    content((15,-3.5),
       [#box(stroke:1pt, inset:3pt, fill:white,
         image("assets/career_experimental/arthritis-fig3.png", width: 550pt)
       )]
@@ -189,6 +196,7 @@
     cetz-canvas({
     import cetz.draw: *
     content((0, 0), [#image("assets/child_brain_microbiome/gut-brain-axis-1.png", width: 380pt)])
+    content((4,-6), text(14pt, [@mayerGutBrainAxis2022]))
     (pause,)
     content((0, 0), [#image("assets/child_brain_microbiome/gut-brain-axis-2.png", width: 380pt)])
 
@@ -197,6 +205,7 @@
     content((0, 0), [#image("assets/child_brain_microbiome/gut-brain-axis-4.png", width: 380pt)])
     (pause,)
     content((0, 0), [#image("assets/child_brain_microbiome/gut-brain-axis-5.png", width: 380pt)])
+
     }))
 ]
 
@@ -207,7 +216,7 @@
     #figure(
         cetz-canvas({
         import cetz.draw: *
-        content((-10,-5), text(14pt)[Bonham, _et. al._, _Sci. Adv._ (2023)])
+        content((-10,-5), text(14pt)[@bonhamGutresidentMicroorganismsTheirGenesAre2023])
         content((0, 0), [#image("assets/child_brain_microbiome/resonance-fig1.jpg", width: 760pt)], name:"fig")
         rect("fig.south-east", (0,4), fill:white, stroke: none)
         (pause,)
@@ -230,7 +239,7 @@
     #figure(
         cetz-canvas({
         import cetz.draw: *
-        content((-10,-5), text(14pt)[Bonham, _et. al._, _Sci. Adv._ (2023)])
+        content((-10,-5), text(14pt)[@bonhamGutresidentMicroorganismsTheirGenesAre2023])
         content((0, 0), [#image("assets/child_brain_microbiome/resonance-fig3.jpg", width: 760pt)], name:"fig")
         rect("fig.south-east", (-3.8,4), fill:white, stroke: none)
         (pause,)
@@ -248,7 +257,7 @@
         import cetz.draw: *
         content((0, 0), image("assets/child_brain_microbiome/resonance-fig4.jpg",
                             width: 615pt), name:"fig")
-        content((-7,-6.6), text(14pt)[Bonham, _et. al._, _Sci. Adv._ (2023)])
+        content((-7,-6.6), text(14pt)[@bonhamGutresidentMicroorganismsTheirGenesAre2023])
         })
     )
 ]
@@ -260,9 +269,10 @@
         cetz-canvas({
         import cetz.draw: *
         content((0, 0), [#image("assets/child_brain_microbiome/khula_africa.png", width: 321pt)], name:"fig")
-        content((-3.5,-6), [  #text(10pt)[Bonham, _et. al._, _mBio_ (2025)]], name:"cite")
+        content((-3.5,-6), text(14pt)[@zieffCharacterizingDevelopingExecutiveFunctionsFirst2024], name:"cite")
         (pause,)
         content((13, 0), [#image("assets/child_brain_microbiome/khula-cohort.png", width: 304pt)], name:"fig2")
+        content((10.5,-6), text(14pt)[@bonhamCodevelopmentGutMicrobialMetabolismVisual2025], name:"cite")
         (pause,)
         rect("fig2.south-east", (5.8,5), fill:white, stroke: none)
         content((13, 0), [#image("assets/child_brain_microbiome/khula-longitudinal.png", width: 284pt)], name:"fig")
@@ -278,7 +288,7 @@
         cetz-canvas({
         import cetz.draw: *
         content((0, 0), [#image("assets/child_brain_microbiome/michaleeg.png", width: 250pt)], name:"fig")
-        content((-1.5,-6), [  #text(10pt)[Bonham, _et. al._, _mBio_ (2025)]], name:"cite")
+        content((-1.5,-6), text(14pt)[@bonhamCodevelopmentGutMicrobialMetabolismVisual2025], name:"cite")
         (pause,)
         content((9, 0), [#image("assets/child_brain_microbiome/vep_peaks.png", width: 230pt)], name:"fig")
         (pause,)
@@ -286,6 +296,15 @@
         })
     )
 
+]
+
+#focus-slide[
+  NO species were significantly associated with VEP
+  using "traditional" linear models
+  #pause
+  
+  RF models had poor performance at predicting VEP
+  
 ]
 
 == Gene set enrichment analysis makes use of full metagenome
@@ -309,14 +328,14 @@
 #slide[
 #v(1em)
 #figure(image("assets/child_brain_microbiome/eeg-enrichments.png", width: 600pt))
-#text(10pt)[Bonham, _et. al._, _mBio_ (2025)]
+#text(14pt)[@bonhamCodevelopmentGutMicrobialMetabolismVisual2025]
 ]
 
 #slide[
     #figure(
         cetz-canvas({
         import cetz.draw: *
-        content((-9.5,-8), [  #text(10pt)[Bonham, _et. al._, _mBio_ (2025)]], name:"cite")
+        content((-9.5,-8), text(14pt)[@bonhamCodevelopmentGutMicrobialMetabolismVisual2025], name:"cite")
 
         content((0, 0), [#image("assets/child_brain_microbiome/concurrent_volcano.png", width: 673pt)], name:"fig")
         content((0, -6), [#image("assets/child_brain_microbiome/geneset-keys.png", width: 250pt)], name:"fig")
@@ -330,7 +349,7 @@
 
 #figure(image("assets/child_brain_microbiome/fsea-futures.png", width: 600pt))
 #v(-1em)
-#text(10pt)[Bonham, _et. al._, _mBio_ (2025)]
+#text(14pt)[@bonhamCodevelopmentGutMicrobialMetabolismVisual2025]
 ]
 
 #slide[
@@ -340,9 +359,8 @@
         import cetz.draw: *
         content((0, 0), [#image("assets/child_brain_microbiome/future_volcano.png", width: 673pt)], name:"fig")
         content((0, -4), [#image("assets/child_brain_microbiome/geneset-keys.png", width: 250pt)], name:"fig")
-        content((-9.5,-8), [  #text(10pt)[Bonham, _et. al._, _mBio_ (2025)]], name:"cite")
-
-            })
+        content((-9.5,-8), text(14pt)[@bonhamCodevelopmentGutMicrobialMetabolismVisual2025], name:"cite")
+        })
     )
 
 ]
@@ -366,6 +384,7 @@
     cetz-canvas({
     import cetz.draw: *
     content((0, 0), [#image("assets/binfantis/evo-breastmilk-1.png", width: 650pt)])
+    content((-9,-6), text(14pt)[@taoEvolutionaryGlycomicsCharacterizationMilkOligosaccharides2011])
     (pause,)
     content((0, 0), [#image("assets/binfantis/evo-breastmilk-2.png", width: 650pt)])
 
@@ -390,7 +409,7 @@
     cetz-canvas({
     import cetz.draw: *
     content((0, 0), [#image("assets/binfantis/tso-fig2-small.jpg", width: 650pt)])
-    content((8,-6), text(14pt)[Tso,Bonham _et. al._, 2018])
+    content((8,-6), text(14pt)[@tsoTargetedHighresolutionTaxonomicIdentificationBifidobacterium2021])
     }))
 ]
 
@@ -402,7 +421,7 @@
     cetz-canvas({
     import cetz.draw: *
     content((0, 0), image("assets/binfantis/sonnenberg-2.png", width: 400pt))
-    content((5,-5), text(14pt)[Olm _et. al._, Science (2022)])
+    content((5,-5), text(14pt)[@olmRobustVariationInfantGutMicrobiome2022])
     }))
 ]
 
@@ -414,6 +433,7 @@
     import cetz.draw: *
     content((14,4), image("assets/lab_general/swanson_headshot.JPG", width: 80pt))
     content((14,0), image("assets/lab_general/cassie_headshot.png", width: 80pt))
+    content((14,-3.6), image("assets/lab_general/trisha_headshot.jpg", width: 80pt))
     content((0, 0), image("assets/binfantis/basic_salt.png", width: 650pt))
     rect((-2,-6),(7.4,6),fill:white,stroke:none)
     (pause,)
@@ -429,6 +449,7 @@
     import cetz.draw: *
     content((11,1), image("assets/lab_general/swanson_headshot.JPG", width: 80pt))
     content((11,-3), image("assets/lab_general/cassie_headshot.png", width: 80pt))
+    content((11,-6.6), image("assets/lab_general/trisha_headshot.jpg", width: 80pt))
     content((0, 0), image("assets/binfantis/transfers-200mM.svg", width: 500pt))
     (pause,)
     content((0, -4.3), image("assets/binfantis/transfers-300mM.svg", width: 500pt))
@@ -448,6 +469,15 @@
 - Do other gut-associated Bifidos have different salt tolerance? (competition?)
 ]
 
+== Other lab Projects
+
+#text(24pt)[
+- Microbial neuroactive gene discovery (using graph-convolutional neural networks)
+- Software development - Gaussian Process models
+- Spatial transcriptomics data processing / modeling (with Matt Woodruff \@ Emory)
+]
+
+
 == Contact info
 
 
@@ -458,12 +488,24 @@
 ][
   #align(center, image("assets/lab_general/lab-logo-banner.png", width: 50%))
 
-- #fa-icon("github", font: "Font Awesome 6 Pro Solid")#h(0.5em)
-  \/ #fa-icon("gitlab", font:  "Font Awesome 6 Pro Solid"): `@kescobo`
-- 🔬🌐(WIP) - https://lab.bonham.ch
-- 🙋🌐 - https://blog.bonham.ch
-- 🦋 https://bsky.app/\@kevinbonham.com
+  - #fa-icon("github", font: "Font Awesome 6 Pro Solid")#h(0.5em)
+    \/ #fa-icon("gitlab", font:  "Font Awesome 6 Pro Solid"): `@kescobo`
+  - 🔬(WIP) https://lab.bonham.ch
+  - 🎙️ https://audiommunity.org
+  - 🦋 https://bsky.app/\@kevinbonham.com
+
+  #align(center, [
+    This Presentation: #linebreak()
+    #text(12pt,blue)[https://github.com/BonhamLab/presentation_gsbs_micro]
+    #tiaoma.qrcode("https://github.com/BonhamLab/presentation_gsbs_micro")
+  ])
 ]
+
+== References
+
+#set text(11pt)
+
+#bibliography("2025-gsbs.bib", style: "annual-reviews-author-date", title:none)
 
 == Thanks! Questions?
 
@@ -471,17 +513,35 @@
     #figure(
     cetz-canvas({
     import cetz.draw: *
-    content((0,0), text(24pt, weight: "bold")[Klepac-Ceraj Lab])
-    content((-3,-3), image("assets/lab_general/vanja_headshot.png", width: 90pt))
-    content((1,-3), image("assets/lab_general/shelley_headshot.png", width: 90pt))
-    content((4,-4), image("assets/lab_general/guilherme_headshot.png", width: 90pt))
-    content((0,-7), image("assets/lab_general/swanson_headshot.JPG", width: 80pt))
-    content((-3,-7), image("assets/lab_general/cassie_headshot.png", width: 80pt))
 
-    content((12,0), text(24pt, weight: "bold")[Other Collaborators])
-    content((12,-4), image("assets/lab_general/laurel_headshot.jpg", width: 95pt))
-    content((10,-7), image("assets/lab_general/emma_headshot.jpg", width: 95pt))
-    content((9,-3), image("assets/lab_general/curtis_headshot.jpg", width: 95pt))
+    content((0,0), text(24pt, weight: "bold")[Klepac-Ceraj Lab])
+    content((-3,-2), image("assets/lab_general/vanja_headshot.png", width: 90pt))
+    content((1,-2), image("assets/lab_general/shelley_headshot.png", width: 90pt))
+    content((4,-3), image("assets/lab_general/guilherme_headshot.png", width: 90pt))
+    content((0,-6), image("assets/lab_general/swanson_headshot.JPG", width: 80pt))
+    content((-3,-6), image("assets/lab_general/cassie_headshot.png", width: 80pt))
+    content((3,-6.2), image("assets/lab_general/trisha_headshot.jpg", width: 80pt))
+
+    content((10,-5.8), text(24pt, weight: "bold")[Other Collaborators])
+    content((10.,-9), image("assets/lab_general/laurel_headshot.jpg", width: 95pt))
+    content((8,-12), image("assets/lab_general/emma_headshot.jpg", width: 95pt))
+    content((7,-8), image("assets/lab_general/curtis_headshot.jpg", width: 95pt))
+    content((11.5,-12), image("assets/lab_general/kirsty_headshot.jpg", width: 75pt))
+    content((13.3,-8), image("assets/lab_general/sean_headshot.png", width: 75pt))
+
+    content((11,-1), image("assets/lab_general/lab-logo-banner.png", width: 250pt))
+
+    content((19,-2), text(24pt, weight: "bold")[Funding])
+
+    content((19,-4), image("assets/lab_general/echo_logo.png", width: 150pt))
+    content((18,-8), image("assets/lab_general/1kD_head.png", width: 100pt))
+    content((21.2,-8), image("assets/lab_general/wellcome_leap.png", width: 150pt))
+
+    content((19.2,-12), [#set align(center)
+    Slides: #box(tiaoma.qrcode("https://github.com/BonhamLab/presentation_gsbs_micro"), baseline: 0.8em)])
+
     }))
 ]
+
+
 
