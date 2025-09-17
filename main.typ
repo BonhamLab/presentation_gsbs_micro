@@ -220,7 +220,10 @@
 
 #focus-slide[
   Only 7 species were significantly associated with cognitive development
+  using "traditional" linear models
 ]
+
+
 
 #slide[
    
