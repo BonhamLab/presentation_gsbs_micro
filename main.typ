@@ -42,7 +42,6 @@
   - My Background - Bench to desk
   - Story 1: Gut microbiome and brain development
   - Story 2: Salt tolerance in _B. infantis_
-  - The future
 ]
 
 = All about me
@@ -183,7 +182,6 @@
   - My Background - Bench to desk
   - *Story 1: Gut microbiome and brain development*
   - Story 2: Salt tolerance in _B. infantis_
-  - The future
 ]
 
 = Introduction - bugs & brains
@@ -232,7 +230,35 @@
   using "traditional" linear models
 ]
 
+== Random Forest models use decision trees
 
+#slide[
+   
+    #figure(
+        cetz-canvas({
+        import cetz.draw: *
+        content((0, 0), [#image("assets/stats_ML/decision-tree_1.png", width: 600pt)], name:"fig")
+        (pause,)
+        content((0, 0), [#image("assets/stats_ML/decision-tree_2.png", width: 600pt)], name:"fig")
+        (pause,)
+        content((0, 0), [#image("assets/stats_ML/decision-tree_3.png", width: 600pt)], name:"fig")
+        (pause,)
+        content((0, 0), [#image("assets/stats_ML/decision-tree_4.png", width: 600pt)], name:"fig")
+        })
+    )
+]
+
+#slide[
+   
+    #figure(
+        cetz-canvas({
+        import cetz.draw: *
+        content((0, 0), [#image("assets/stats_ML/decision-tree-train.svg", width: 600pt)], name:"fig")
+        })
+    )
+]
+
+== RF models find many more microbes than linear models
 
 #slide[
    
@@ -262,6 +288,13 @@
     )
 ]
 
+#focus-slide[
+The accelerated longitudinal study design makes stats complicated
+#pause
+
+The "cognitive score" measure is imprecise
+]
+
 == The Khula study of child development
 
 #slide[
@@ -281,7 +314,7 @@
     #v(-1em)
 ]
 
-== Visual evoked potential is a measure of brain development
+== The visual evoked potential (VEP) measures brain development
 
 #slide[
     #figure(
@@ -293,6 +326,19 @@
         content((9, 0), [#image("assets/child_brain_microbiome/vep_peaks.png", width: 230pt)], name:"fig")
         (pause,)
         content((18, 0), [#image("assets/child_brain_microbiome/vep_peaks_icons.png", width: 230pt)], name:"fig")
+        })
+    )
+
+]
+
+== VEP peaks get faster and smaller as the brain develops
+
+#slide[
+    #figure(
+        cetz-canvas({
+        import cetz.draw: *
+        content((0, 0), [#image("assets/child_brain_microbiome/khula-eeg-curves.png", width: 500pt)], name:"fig")
+        content((-1.5,-6), text(14pt)[@bonhamCodevelopmentGutMicrobialMetabolismVisual2025], name:"cite")
         })
     )
 
@@ -330,6 +376,8 @@
 #figure(image("assets/child_brain_microbiome/eeg-enrichments.png", width: 600pt))
 #text(14pt)[@bonhamCodevelopmentGutMicrobialMetabolismVisual2025]
 ]
+
+== More microbial genes are associated with _future_ VEP development
 
 #slide[
     #figure(
@@ -372,7 +420,6 @@
   - My Background - Bench to desk
   - Story 1: Gut microbiome and brain development
   - *Story 2: Salt tolerance in _B. infantis_*
-  - The future
 ]
 
 = Salt tolerance in _Bifidobacterium longum_ subsp. _infantis_
@@ -461,9 +508,9 @@
 == Lots of open questions
 
 #text(24pt)[
-- What gene are enabling adaptation to salt? 
+- What genes are enabling adaptation to salt? 
   - RNAseq during growth / transfer experiments
-  - Microbial genetics experiments
+  - Microbial genetics experiments #pause
 - Are there variants in salt-tolerance genes in global human-associated _B. infantis_ stains?
   - We have thousands of infant metagenomes to explore
 - Do other gut-associated Bifidos have different salt tolerance? (competition?)
