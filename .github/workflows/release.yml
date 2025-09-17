@@ -1,4 +1,4 @@
-name: Build and Release Touying Presentation
+name: Build and Release Presentation
 
 on:
   release:
@@ -85,7 +85,7 @@ jobs:
           # Verify PDF was created and has reasonable size
           if [ -f "presentation.pdf" ]; then
             size=$(stat -c%s presentation.pdf)
-            echo "✓ PDF generated successfully (${size} bytes)"
+            echo "✓ PDF generated successfully: presentation.pdf (${size} bytes)"
             
             # Basic size validation (should be at least 10KB for a real presentation)
             if [ "$size" -lt 10240 ]; then
@@ -197,7 +197,7 @@ jobs:
         mkdir -p release-assets
         
         # Copy artifacts to release directory with descriptive names
-        cp presentation.pdf "release-assets/presentation.pdf"
+        cp presentation.pdf "release-assets/"
         cp "${ARCHIVE_NAME}.tar.gz" "release-assets/"
         
         # Create checksums for integrity verification
@@ -212,8 +212,12 @@ jobs:
       run: |
         echo "=== Generating release notes ==="
         
-        cat > release-notes.md << 'EOF'
-        # 📊 Touying Presentation Release
+        # Get dynamic values
+        TYPST_VERSION=$(typst --version)
+        BUILD_DATE=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+        
+        cat > release-notes.md << EOF
+        # 📊 Presentation Release
         
         This release contains the compiled presentation and complete source code with all submodule dependencies.
         
@@ -225,8 +229,8 @@ jobs:
         
         ## 🔧 Build Information
         
-        - **Typst Version**: $(typst --version)
-        - **Build Date**: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+        - **Typst Version**: ${TYPST_VERSION}
+        - **Build Date**: ${BUILD_DATE}
         - **Repository**: ${{ github.repository }}
         - **Commit**: ${{ github.sha }}
         
