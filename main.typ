@@ -281,12 +281,20 @@
     #figure(
         cetz-canvas({
         import cetz.draw: *
-        content((0, 0), image("assets/child_brain_microbiome/resonance-fig4.jpg",
-                            width: 615pt), name:"fig")
-        content((-7,-6.6), text(14pt)[@bonhamGutresidentMicroorganismsTheirGenesAre2023])
+        content((0, 0), image("assets/child_brain_microbiome/resonance-fig4.jpg", width: 615pt))
+        content((-7,-6.8), text(14pt)[@bonhamGutresidentMicroorganismsTheirGenesAre2023])
+        rect((11,-3.5), (-4.5,6.5), fill:white, stroke: none)
+        rect((10,-6.2), (-5.75,-3.5), fill:white, stroke: none)
+        rect((6,-6.5), (-2.75,-5.5), fill:white, stroke: none)
+        (pause,)
+        content((0, 0), image("assets/child_brain_microbiome/resonance-fig4.jpg", width: 615pt))
+        (pause,)
+        rect((-2.4,-2.5), (-10.75,-3.5), stroke: red, name:"redpoly")
+        line((-2.9,-3.5), (-5.1,-5.8), (-5.8,-5.8), (-5.8,-4.9), (-4.3,-3.5), stroke: red)
         })
     )
 ]
+
 
 #focus-slide[
 The accelerated longitudinal study design makes stats complicated
@@ -301,7 +309,7 @@ The "cognitive score" measure is imprecise
     #figure(
         cetz-canvas({
         import cetz.draw: *
-        content((0, 0), [#image("assets/child_brain_microbiome/khula_africa.png", width: 321pt)], name:"fig")
+ content((0, 0), [#image("assets/child_brain_microbiome/khula_africa.png", width: 321pt)], name:"fig")
         content((-3.5,-6), text(14pt)[@zieffCharacterizingDevelopingExecutiveFunctionsFirst2024], name:"cite")
         (pause,)
         content((13, 0), [#image("assets/child_brain_microbiome/khula-cohort.png", width: 304pt)], name:"fig2")
