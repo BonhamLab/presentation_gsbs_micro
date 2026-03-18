@@ -2,6 +2,8 @@
 
 [![Download Latest Presentation](https://img.shields.io/github/v/release/BonhamLab/presentation_gsbs_micro?label=Download%20PDF&style=flat-square&logo=adobe-acrobat-reader&color=red)](https://github.com/BonhamLab/presentation_gsbs_micro/releases/latest/download/presentation.pdf)
 
+[![Title Slide](https://github.com/BonhamLab/presentation_gsbs_micro/releases/latest/download/title-slide.png)](https://github.com/BonhamLab/presentation_gsbs_micro/releases/latest/download/presentation.pdf)
+
 Introductory presentation for the Tufts Molecular Microbiology graduate program.
 
 ## Quick Access
